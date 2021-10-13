@@ -17,7 +17,21 @@ namespace DistrictAndArea
             int district = 2 * sideA + 2 * sideB;
             int area = sideA * sideB;
 
-            Console.WriteLine("A megadott téglalap kerülete " + district + " cm, területe pedig " + area + " cm2.");
+            if ( sideA == sideB )
+            {
+                Console.WriteLine("A megadott négyzet kerülete " + district + " cm, területe pedig " + area + " cm2.");
+            } else
+            {
+                Console.WriteLine("A megadott téglalap kerülete " + district + " cm, területe pedig " + area + " cm2.");
+            }
+
+            string type = sideA == sideB ? "négyzet" : "téglalap";
+            Console.WriteLine("A megadott "+ type + " kerülete " + district + " cm, területe pedig " + area + " cm2.");
+
+            Console.WriteLine("A megadott " + 
+                (sideA == sideB ? "négyzet" : "téglalap") + 
+                " kerülete " + (2 * sideA + 2 * sideB) + 
+                " cm, területe pedig " + (sideA * sideB) + " cm2.");
         }
     }
 }
