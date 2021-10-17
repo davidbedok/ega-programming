@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Triangle
+namespace Qwaevisz
 {
     public class TriangleCalculator
     {

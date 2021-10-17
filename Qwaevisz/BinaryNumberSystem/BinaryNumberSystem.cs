@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace BinaryNumberSystem
+namespace Qwaevisz
 {
-    public class Program
+    public class BinaryNumberSystem
     {
         private static void Main(string[] args)
         {

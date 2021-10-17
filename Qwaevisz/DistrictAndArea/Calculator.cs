@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DistrictAndArea
+namespace Qwaevisz
 {
     public class Calculator
     {
