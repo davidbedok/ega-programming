@@ -7,7 +7,7 @@ namespace ProgrammingThesisSummary
     public class SummaryWithUtility
     {
 
-        private static void Main(string[] args)
+        private static void Main2(string[] args)
         {
             int size = Utility.GetNumberSize();
             int[] numbers = Utility.GenerateNumbers(size);

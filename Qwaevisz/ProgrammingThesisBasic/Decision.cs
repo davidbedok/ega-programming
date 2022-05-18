@@ -7,7 +7,7 @@ namespace ProgrammingThesisSummary
     public class Decision
     {
 
-        private static void Main2(string[] args)
+        private static void Main(string[] args)
         {
             int size = GetNumberSize();
             int[] numbers = GenerateNumbers(size);
@@ -23,6 +23,7 @@ namespace ProgrammingThesisSummary
             Console.WriteLine("Ciklusmagok futásának száma: " + i);
             */
             Console.WriteLine("Van a sorozatban nulla? " + HasZero(numbers));
+            Console.WriteLine("Van a sorozatban nulla? " + HasZeroBad1(numbers));
         }
 
         private static int GetNumberSize()
@@ -68,6 +69,37 @@ namespace ProgrammingThesisSummary
                 i++;
             }
             return i < data.Length;
+        }
+
+        private static bool HasZeroBad1(int[] data)
+        {
+            int i = 0;
+            bool success = false;
+            // Bad: ua for. 
+            while ( i < data.Length )
+            {
+                if ( data[i] == 0 )
+                {
+                    success = true;
+                }
+                i++;
+            }
+            return success;
+        }
+
+        private static bool HasZeroSemiGood(int[] data)
+        {
+            int i = 0;
+            bool success = false;
+            while (i < data.Length && !success)
+            {
+                if (data[i] == 0)
+                {
+                    success = true;
+                }
+                i++;
+            }
+            return success;
         }
 
     }
