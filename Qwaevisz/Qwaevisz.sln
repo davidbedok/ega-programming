@@ -41,6 +41,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenfordsLaw", "BenfordsLaw\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodDemo", "MethodDemo\MethodDemo.csproj", "{79971110-C693-49C8-ADCF-53DD42D5235D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchAndSort", "SearchAndSort\SearchAndSort.csproj", "{6CFF620D-FABD-47E5-BB62-6A0DC412FDA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBasics", "GameBasics\GameBasics.csproj", "{91C3DB9D-B4DA-435A-AF2E-D0972859A807}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{79971110-C693-49C8-ADCF-53DD42D5235D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79971110-C693-49C8-ADCF-53DD42D5235D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79971110-C693-49C8-ADCF-53DD42D5235D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CFF620D-FABD-47E5-BB62-6A0DC412FDA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CFF620D-FABD-47E5-BB62-6A0DC412FDA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CFF620D-FABD-47E5-BB62-6A0DC412FDA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CFF620D-FABD-47E5-BB62-6A0DC412FDA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C3DB9D-B4DA-435A-AF2E-D0972859A807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C3DB9D-B4DA-435A-AF2E-D0972859A807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C3DB9D-B4DA-435A-AF2E-D0972859A807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C3DB9D-B4DA-435A-AF2E-D0972859A807}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
