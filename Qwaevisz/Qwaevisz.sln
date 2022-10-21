@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello", "Hello\Hello.csproj", "{18A995A1-D7E7-4A50-836F-17D29ED2D812}"
 EndProject
@@ -43,7 +43,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MethodDemo", "MethodDemo\Me
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchAndSort", "SearchAndSort\SearchAndSort.csproj", "{6CFF620D-FABD-47E5-BB62-6A0DC412FDA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameBasics", "GameBasics\GameBasics.csproj", "{91C3DB9D-B4DA-435A-AF2E-D0972859A807}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameBasics", "GameBasics\GameBasics.csproj", "{91C3DB9D-B4DA-435A-AF2E-D0972859A807}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
