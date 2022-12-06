@@ -7,10 +7,10 @@ namespace Geometry
     public abstract class Shape : Object
     {
 
-        protected int x;
-        protected int y;
-        protected ConsoleColor lineColor;
-        protected ConsoleColor backgroundColor;
+        protected readonly int x;
+        protected readonly int y;
+        protected readonly ConsoleColor lineColor;
+        protected readonly ConsoleColor backgroundColor;
 
         public Shape(int x, int y, ConsoleColor lineColor, ConsoleColor backgroundColor)
         {

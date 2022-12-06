@@ -27,6 +27,9 @@ namespace Geometry
         private static void TestBasicShapes()
         {
             Rectangle testRect1 = new Rectangle(3, 6, ConsoleColor.Red, ConsoleColor.White, 12, 6);
+
+
+
             Console.WriteLine(testRect1);
             Console.WriteLine("District: " + testRect1.GetPerimiter());
             Console.WriteLine("Area: " + testRect1.GetArea());
