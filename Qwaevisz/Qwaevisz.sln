@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchAndSort", "SearchAndS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameBasics", "GameBasics\GameBasics.csproj", "{91C3DB9D-B4DA-435A-AF2E-D0972859A807}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordConjugation", "WordConjugation\WordConjugation.csproj", "{83C5531A-CC08-408E-8970-EB4CAD2ABF20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{91C3DB9D-B4DA-435A-AF2E-D0972859A807}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91C3DB9D-B4DA-435A-AF2E-D0972859A807}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91C3DB9D-B4DA-435A-AF2E-D0972859A807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C5531A-CC08-408E-8970-EB4CAD2ABF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C5531A-CC08-408E-8970-EB4CAD2ABF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C5531A-CC08-408E-8970-EB4CAD2ABF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C5531A-CC08-408E-8970-EB4CAD2ABF20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

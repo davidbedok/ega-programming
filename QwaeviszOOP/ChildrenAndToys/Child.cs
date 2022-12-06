@@ -13,13 +13,13 @@ namespace ChildrenAndToys
         private readonly string name;
         private readonly int age;
         private Toy favouriteToy;
-
+        
         public Child( string name, int age)
         {
             this.name = name;
             this.age = age;
-        }   
-
+        }
+        
         public void SetFavouriteToy( Toy favouriteToy )
         {
             this.favouriteToy = favouriteToy;
