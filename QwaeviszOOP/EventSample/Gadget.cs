@@ -70,7 +70,7 @@ namespace EventSample
             // (C)
             if (TransactionEventCS != null )
             {
-                TransactionEventCS.Invoke(this, new TransactionEventArgs(buyer));
+                TransactionEventCS.Invoke(this, buyer);
             }
 
             return this.name + " is bought by " + buyer + " (price: "+ this.price+")";

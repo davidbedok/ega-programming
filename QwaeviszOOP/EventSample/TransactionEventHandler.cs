@@ -5,6 +5,6 @@ using System.Text;
 namespace EventSample
 {
 
-    public delegate void TransactionEventHandler(object sender, TransactionEventArgs eventArgs);
+    public delegate void TransactionEventHandler(Gadget gadget, string buyer);
 
 }

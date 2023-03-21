@@ -30,8 +30,8 @@ namespace EventSample
             // // gadget.Unsubscribe(this.nav); --> unsubscribe
 
             // (C) C# solution
-            gadget.TransactionEventCS += this.nav.GadgetOnTransaction;
-            gadget.TransactionEventCS += this.inspector.GadgetOnTransaction;
+            gadget.TransactionEventCS += this.nav.OnTransaction;
+            gadget.TransactionEventCS += this.inspector.OnTransaction;
             // // gadget.TransactionEventCS -= this.nav.GadgetOnTransaction; --> unsubscribe
 
             this.gadgets.Add(gadget);
