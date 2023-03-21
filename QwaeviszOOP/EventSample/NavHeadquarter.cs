@@ -1,19 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EventSample
 {
-    public class NavHeadquarter
+    public class NavHeadquarter : TransactionEvent
     {
 
         private readonly string name;
-        private TransactionEventHandler transactionEventHandler;
-
+        
         public NavHeadquarter( string name )
         {
             this.name = name;
-            this.transactionEventHandler = new TransactionEventHandler(this);
         }
 
         public string GetName()
@@ -21,9 +17,17 @@ namespace EventSample
             return this.name;
         }
 
-        public TransactionEventHandler GetTransactionEventHandler()
+        // (A) and (B)
+        public void OnTransaction(Gadget gadget, string buyer)
         {
-            return this.transactionEventHandler;
+            Console.WriteLine("NAV (" + this.name + ") is monitoring transaction: " + gadget.GetName() + " --> " + buyer);
+        }
+
+        // (C)
+        public void GadgetOnTransaction(object sender, TransactionEventArgs eventArgs)
+        {
+            Gadget gadget = (Gadget)sender;
+            Console.WriteLine("NAV (" + this.name + ") is monitoring transaction: " + gadget.GetName() + " --> " + eventArgs.Buyer);
         }
 
     }

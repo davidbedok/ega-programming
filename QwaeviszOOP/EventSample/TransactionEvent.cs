@@ -7,7 +7,7 @@ namespace EventSample
     public interface TransactionEvent
     {
 
-        void Fire(Gadget gadget, string buyer);
+        void OnTransaction(Gadget gadget, string buyer);
 
     }
 }

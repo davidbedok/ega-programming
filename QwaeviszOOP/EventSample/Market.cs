@@ -1,26 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
 
 namespace EventSample
 {
     public class Market
     {
 
-        private NavHeadquarter navHQ;
+        private NavHeadquarter nav;
+        private MarketInspector inspector;
+
         private List<Gadget> gadgets;
 
         public Market()
         {
             this.gadgets = new List<Gadget>();
-            this.navHQ = new NavHeadquarter("Budapest");
+            this.nav = new NavHeadquarter("Budapest");
+            this.inspector = new MarketInspector();
         }
 
         public void AddGadget( Gadget gadget )
         {
-            gadget.SetTransactionEvent(this.navHQ.GetTransactionEventHandler());
+            // (A) Simple event handler
+            // gadget.TransactionEvent = this.nav;
+            // // gadget.TransactionEvent = null; --> unsubscribe
+
+            // (B) Multiple event handler
+            // gadget.Subscribe(this.nav);
+            // gadget.Subscribe(this.inspector);
+            // // gadget.Unsubscribe(this.nav); --> unsubscribe
+
+            // (C) C# solution
+            gadget.TransactionEventCS += this.nav.GadgetOnTransaction;
+            gadget.TransactionEventCS += this.inspector.GadgetOnTransaction;
+            // // gadget.TransactionEventCS -= this.nav.GadgetOnTransaction; --> unsubscribe
+
             this.gadgets.Add(gadget);
         }
 
